@@ -10,10 +10,6 @@ img {
     max-width: 100%;
 }
 
-body {
-    font-weight: 300;
-}
-
 .wrapper {
     font-family: Helvetica, sans-sans-serif;
     display: grid;
@@ -26,7 +22,7 @@ body {
 .header {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 15% 70% 15%;
+    grid-template-rows: 15% 65% 20%;
     padding: 20px;
 }
 

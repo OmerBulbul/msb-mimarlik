@@ -1,18 +1,27 @@
+$(document).ready(() => {
+    $('.housing-button').on('click', (event) => {
+        $('.nav-housing').toggleClass('hide');
+        $(event.currentTarget).find('i').toggleClass('rotate');
+        $('.nav-commercial').addClass('hide');
+        $('.nav-hospital').addClass('hide');
+    });
 
-var accordion = document.getElementsByClassName("accordion");
 
-for (let index = 0; index < accordion.length; index++) {
-    accordion[index].addEventListener("click", function () {
-        var content = this.nextElementSibling;
-        if (content.style.maxHeight) {
-            console.log(content.style.maxHeight);
-            content.style.maxHeight = null;
-        } else {
-            content.style.maxHeight = 300 + "px";
-        }
-    })
+    $('.commercial-button').on('click', (event) => {
+        $('.nav-commercial').toggleClass('hide');
+        $(event.currentTarget).find('i').toggleClass('rotate');
+        $('.nav-housing').addClass('hide');
+        $('.nav-hospital').addClass('hide');
+    });
 
-}
-// $(document).ready(() => {
 
-// })
+    $('.hospital-button').on('click', (event) => {
+        $('.nav-hospital').toggleClass('hide');
+        $(event.currentTarget).find('i').toggleClass('rotate');
+        $('.nav-commercial').addClass('hide');
+        $('.nav-housing').addClass('hide');
+    });
+
+
+
+});
